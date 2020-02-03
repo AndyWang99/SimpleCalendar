@@ -1,0 +1,29 @@
+#times {
+  float: left;
+  width: 80px;
+  height: 720px;
+  margin-right: 10px;
+}
+
+.times-hourly {
+  text-align: right;
+}
+
+.times-hourly-time {
+  float: left;
+  font-weight: 700;
+}
+
+.times-AMPM {
+  float: left;
+}
+
+#events {
+  float: left;
+  width: 600px;
+  height: 720px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #eeeeee;
+  border-left: 3px solid #dddddd;
+}
