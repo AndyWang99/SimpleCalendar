@@ -5,17 +5,18 @@
   margin-right: 10px;
 }
 
-.times-hourly {
-  text-align: right;
-}
-
 .times-hourly-time {
-  float: left;
+  float: right;
   font-weight: 700;
 }
 
 .times-AMPM {
-  float: left;
+  margin-left: 5px;
+  float: right;
+}
+
+.times-half-hourly {
+  text-align: right;
 }
 
 #events {
