@@ -9,15 +9,15 @@ function initTimes() {
   let end = 20;
   for (let i = start; i <= end; i++) {
     // create hourly timestamp
-    let hourlyDiv = document.createElement("div");
+    let hourlyDiv = document.createElement("p");
 
-    let hourlyDivTime = document.createElement("div");
+    let hourlyDivTime = document.createElement("span");
     // i % 24 since it is possible for i > 24 since i is at most start + end
     hourlyDivTime.innerHTML = (i % 12) + 1 + ":00";
     hourlyDivTime.className = "times-hourly-time";
     hourlyDiv.appendChild(hourlyDivTime);
 
-    let hourlyDivAMPM = document.createElement("div");
+    let hourlyDivAMPM = document.createElement("span");
     // 12PM is 11.
     if (i < 11) {
       hourlyDivAMPM.innerHTML = "AM";
@@ -32,7 +32,7 @@ function initTimes() {
 
     // create 30 min mark timestamp, when not on last iteration
     if (i < end) {
-      let halfHourDivTime = document.createElement("div");
+      let halfHourDivTime = document.createElement("p");
       halfHourDivTime.innerHTML = (i % 12) + 1 + ":30";
       halfHourDivTime.className = "times-half-hourly";
       divTimes.appendChild(halfHourDivTime);
