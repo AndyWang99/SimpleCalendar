@@ -2,6 +2,13 @@
   font-family: sans-serif;
 }
 
+#calendar::after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
 #times {
   float: left;
   width: 80px;
@@ -41,4 +48,26 @@
   padding-right: 10px;
   background-color: #eeeeee;
   border-left: 3px solid #dddddd;
+  position: relative;
+}
+
+.event {
+  background-color: #ffffff;
+  width: calc(100% - 28px);
+  border-left: 5px solid #4e3ffc;
+}
+
+.subject {
+  font-weight: 700;
+  color: #4e3ffc;
+  margin-top: 5px;
+  margin-left: 4px;
+}
+
+.body {
+  font-weight: 200;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 4px;
 }
